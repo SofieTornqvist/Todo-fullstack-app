@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 90vh;
+    font-family: "inter", sans-serif;
+    background-color: aliceblue;
+}
+
+.app-title {
+    font-size: 2.5rem;
+    font-weight: 100;
+}
+
+#todo-app {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background-color: white;
+    padding: 2rem;
+    border-radius: 0.75rem;
+    width: 400px;
+    height: 500px;
+}
+
+
+.formStyle {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+#todo-input {
+    flex-grow: 1;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid lightgray;
+}
+
+#todo-input:focus {
+    outline: 1px solid rgb(143, 138, 159);
+}
+
+.buttonStyle {
+    background-color: orange;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+}
+
+.buttonStyle:hover {
+    background-color: rgb(165, 108, 3);
+}
+
+#todo-list {
+    list-style: none;
+    padding: 0.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    overflow: auto;
+    height: 300px;
+    border: 1px solid lightgray;
+    border-radius: 0.5rem;
+}
+
+#todo-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#todo-list li div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.delete-button {
+    color: #d9d9d9;
+    font-weight: 700;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+.delete-button:hover {
+    color: red;
+}
+
+

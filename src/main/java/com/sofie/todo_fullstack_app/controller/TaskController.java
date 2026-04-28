@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController // Marks this class as a REST controller (returns JSON responses)
+@CrossOrigin(origins = "http://127.0.0.1:5500")
 @RequestMapping("/tasks") // Base URL for all endpoints in this controller
 public class TaskController {
 
